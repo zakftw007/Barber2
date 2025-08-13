@@ -45,9 +45,9 @@ const SignIn = () => {
     try {
       await signInWithEmailAndPassword(auth, data.email.trim(), data.password);
       Alert.alert("Success", "Signed in successfully!");
-      // You can navigate to your home screen here
+      // navigate to home screen
     } catch (error: any) {
-      Alert.alert("Error", error.message);
+      Alert.alert("Error", error.message); // need to display generic error message 
     }
   };
 
